@@ -1,42 +1,95 @@
-#root {
-  max-width: 1280px;
+/* DoctorSelectio
+n.css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  background: #05092f;
+}
+
+.no-doctors-message {
+  color: red;
+  font-style: italic;
+}
+
+.doctor-selection-container {
+  /* padding: 20px; */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-selection-container h3 {
+  color: #333;
+  /* margin-bottom: 20px; */
+}
+
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-item {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.doctor-item:hover {
+  background-color: #f0f0f0;
+}
+
+.appointment-booking {
+  margin-top: 20px;
+}
+
+
+/* AppointmentBooking.css */
+
+.appointment-booking-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.appointment-booking-container h4 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.appointment-booking-container input[type="date"],
+.appointment-booking-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.appointment-booking-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.card {
-  padding: 2em;
+.appointment-booking-container button:hover {
+  background-color: #0056b3;
 }
 
-.read-the-docs {
-  color: #888;
+.appointment-booking-container p {
+  margin-top: 20px;
+  color: green;
 }
